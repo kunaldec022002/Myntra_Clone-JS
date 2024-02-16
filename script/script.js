@@ -2,6 +2,14 @@
 
 let bagItems = [];
 
+onLoad();
+
+function onLoad()
+{
+  displayItemsOnHomePage();
+  displayBagIcon();
+}
+
 function addToBag (itemId)
 {
  bagItems.push(itemId);
@@ -11,7 +19,15 @@ function addToBag (itemId)
 function displayBagIcon()
 {
    let bagItemCountElement = document.querySelector('.bag-items-count');
-   bagItemCountElement.innerText = bagItems.length;
+
+   if (bagItems.length > 0)
+   {
+     bagItemCountElement.innerText = bagItems.length;
+     bagItemCountElement.style.visibility = 'visible';
+   }
+   else{
+        bagItemCountElement.style.visibility = 'hidden';
+   }
 }
 
 function displayItemsOnHomePage ()
@@ -51,5 +67,5 @@ function displayItemsOnHomePage ()
   
   itemsContainerElement.innerHTML = innerHtml ;
 }
-displayItemsOnHomePage();
+
 
