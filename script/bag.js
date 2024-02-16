@@ -1,12 +1,37 @@
+
+
+let bagItemObjects;
+
 onLoad();
 
-function onLoad()
+
+
+function onLoad()  //onLoad()
 {
+  loadBagItemObjects();
+
   displayBagItems();
 }
 
-function displayBagItems()
+function  loadBagItemObjects()  // loaadBagItemObjects()
 {
+   console.log(bagItems)
+
+   bagItemObjects = bagItems.map(itemId=>{
+    for (let i = 0; i<bagItems.length; i++)
+    {
+      if(itemId==items[i].id)
+      {
+        return items[i];
+      }
+    }
+   });
+   console.log(bagItemObjects);
+}
+
+function displayBagItems() //  displayBagItems()
+{
+
    let containerElement = document.querySelector('.bag-items-container');
    containerElement.innerHTML= ` <div class="bag-item-container">
    <div class="item-left-part">
@@ -35,5 +60,5 @@ function displayBagItems()
 
 function generateItemHTML (item)
 {
-  
+
 }
