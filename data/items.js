@@ -9,7 +9,7 @@ const items = [
       current_price: 606,
       discount_percentage: 42,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '20 Oct 2023',
       rating: {
           stars: 4.5,
           count: 1400,
@@ -24,7 +24,7 @@ const items = [
       current_price: 1507,
       discount_percentage: 42,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '15 Oct 2023',
       rating: {
           stars: 4.3,
           count: 24,
@@ -39,7 +39,7 @@ const items = [
       current_price: 495,
       discount_percentage: 69,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '05 Oct 2023',
       rating: {
           stars: 4.1,
           count: 249,
@@ -54,7 +54,7 @@ const items = [
       current_price: 500,
       discount_percentage: 45,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '31 Oct 2023',
       rating: {
           stars: 5.0,
           count: 10,
@@ -69,7 +69,7 @@ const items = [
       current_price: 489,
       discount_percentage: 65,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '02 Oct 2023',
       rating: {
           stars: 4.2,
           count: 3500,
@@ -84,7 +84,7 @@ const items = [
       current_price: 1000,
       discount_percentage:15,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '15 Oct 2023',
       rating: {
           stars: 0.0,
           count: 0,
@@ -112,7 +112,7 @@ const items = [
       current_price: 142,
       discount_percentage: 50,
       return_period: 14,
-      delivery_date: '10 Oct 2023',
+      delivery_date: '26 Oct 2023',
       rating: {
           stars: 4.2,
           count: 5200,

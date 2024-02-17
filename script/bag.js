@@ -43,6 +43,14 @@ function displayBagItems() //  displayBagItems()
    containerElement.innerHTML= innerHTML ;
 }
 
+function removeFromBag (itemId)
+{
+  bagItems = bagItems.filter (bagItemId => bagItemId != itemId);
+  localStorage.setItem('bagItems', JSON.stringify(bagItems));
+  loadBagItemObjects();
+  displayBagItems();
+}
+
 function generateItemHTML (item)
 {
   return `<div class="bag-item-container">
@@ -58,15 +66,15 @@ function generateItemHTML (item)
           <span class="discount-percentage">(${item.discount_percentage}% OFF)</span>
         </div>
         <div class="return-period">
-          <span class="return-period-days">14 days</span> return available
+          <span class="return-period-days">${item.return_period}
         </div>
         <div class="delivery-details">
           Delivery by
-          <span class="delivery-details-days">10 Oct 2023</span>
+          <span class="delivery-details-days">  ${item. delivery_date}</span>
         </div>
       </div>
 
-      <div class="remove-from-cart">X</div>
+      <div class="remove-from-cart" onClick="removeFromBag(${item.id})">X</div>
     </div>`;
 }
 
