@@ -38,6 +38,7 @@ function displayItemsOnHomePage ()
 {
   let itemsContainerElement = document.getElementById('items-container');
 
+  
   if (!itemsContainerElement)
   {
     return;
