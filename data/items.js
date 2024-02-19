@@ -86,8 +86,8 @@ const items = [
       return_period: 14,
       delivery_date: '15 Oct 2023',
       rating: {
-          stars: 0.0,
-          count: 0,
+          stars: 4.0,
+          count: 3500,
       },
   },
   {
@@ -117,5 +117,36 @@ const items = [
           stars: 4.2,
           count: 5200,
       },
-  }
+  },
+
+  {
+    id: '009',
+    image: 'images/9.webp',
+    company: 'HRX by Hrithik Roshan',
+    item_name: 'Womwn Solid Joggers',
+    original_price: 1199,
+    current_price: 491,
+    discount_percentage: 59,
+    return_period: 10,
+    delivery_date: '26 Feb 2024',
+    rating: {
+        stars: 4.5,
+        count: 5200,
+    },
+},
+{
+    id: '0010',
+    image: 'images/10.jpg',
+    company: 'Aristocrat',
+    item_name: 'Medium Trolley Suitcase',
+    original_price: 10345,
+    current_price: 2299,
+    discount_percentage: 8046,
+    return_period: 14,
+    delivery_date: '26 march 2024',
+    rating: {
+        stars: 4.7,
+        count: 7200,
+    },
+}
 ];
