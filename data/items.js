@@ -135,7 +135,7 @@ const items = [
     },
 },
 {
-    id: '0010',
+    id: '10',
     image: 'images/10.jpg',
     company: 'Aristocrat',
     item_name: 'Medium Trolley Suitcase',

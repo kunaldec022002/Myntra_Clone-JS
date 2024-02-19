@@ -135,6 +135,11 @@ header {
   font-size: 10px;
 }
 
+#action_name
+{
+  text-decoration: none;
+  color: black;
+}
 .search_bar {
   height: 40px;
   
