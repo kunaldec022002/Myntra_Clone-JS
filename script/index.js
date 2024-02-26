@@ -13,6 +13,8 @@ function onLoad()
   displayBagIcon();
 }
 
+
+
 function addToBag (itemId)
 {
  bagItems.push(itemId);
@@ -42,7 +44,9 @@ function displayItemsOnHomePage ()
   if (!itemsContainerElement)
   {
     return;
-  }
+  };
+
+
 
   //object
   
@@ -54,7 +58,7 @@ function displayItemsOnHomePage ()
     <img src="${item.image}" class="item-img"/>
     
     <div class="rating">
-      ${item.rating.stars} ⭐ | ${item.rating.count}
+      ${item.rating.stars} ⭐ | ${item.rating.count}k
     </div>
     
     <div class="company-name">${item.company}</div>

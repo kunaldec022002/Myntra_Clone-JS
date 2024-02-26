@@ -136,17 +136,49 @@ const items = [
 },
 {
     id: '10',
-    image: 'images/10.jpg',
-    company: 'Aristocrat',
-    item_name: 'Medium Trolley Suitcase',
-    original_price: 10345,
+    image: 'images/10.webp',
+    company: 'Nautica',
+    item_name: 'Men Slim Fit Chinos',
+    original_price: 4599,
     current_price: 2299,
-    discount_percentage: 8046,
+    discount_percentage: 50,
+    return_period: 24,
+    delivery_date: '10 march 2024',
+    rating: {
+        stars: 4.5,
+        count: 400,
+    },
+},
+{
+    id: '11',
+    image: 'images/11.webp',
+    company: 'U.S Polo Assan',
+    item_name: 'Men MONTON 4.0 Sneakers',
+    original_price: 1649,
+    current_price: 2999,
+    discount_percentage: 46,
+    return_period: 9,
+    delivery_date: '02 march 2024',
+    rating: {
+        stars: 4.4,
+        count: 2.2,
+    },
+},
+{
+    id: '12',
+    image: 'images/12.webp',
+    company: 'KALINI',
+    item_name: 'Ethnic Motifs Printed Saree',
+    original_price: 3299,
+    current_price: 692,
+    discount_percentage: 79,
     return_period: 14,
     delivery_date: '26 march 2024',
     rating: {
         stars: 4.7,
         count: 7200,
     },
-}
+},
+
+
 ];
