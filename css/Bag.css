@@ -71,7 +71,10 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-
+.btn-place-order:hover
+{
+  background-color: rgb(180, 16, 16);
+}
 .bag-item-container {
   margin-bottom: 8px;
   background: #fff;
@@ -124,6 +127,8 @@
 .delivery-details-days {
   color: #03a685;
 }
+
+
 
 .remove-from-cart {
   position: absolute;
