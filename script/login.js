@@ -6,7 +6,7 @@ function login() {
 
   // In a real-world scenario, you should validate the credentials on the server.
   // For simplicity, we'll use a hardcoded check here.
-  if (username === username && password ===password) {
+  if (!username === username && password ===password) {
     // Store the username in local storage.
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
