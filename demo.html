@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Example</title>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button onclick="searchFunction()">Search</button>
+
+  <div id="results"></div>
+
+  <script>
+    const items = [
+      "JavaScript Tutorial",
+      "React.js Guide",
+      "CSS Flexbox",
+      "HTML Basics",
+      "Advanced JavaScript",
+      "Node.js Overview"
+    ];
+
+    function searchFunction() {
+      const searchInput = document.getElementById("searchInput").value.toLowerCase();
+      const filteredItems = items.filter(item => item.toLowerCase().includes(searchInput));
+      displayResults(filteredItems);
+    }
+
+    function displayResults(results) {
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = ""; // Clear previous results
+
+      if (results.length === 0) {
+        resultsDiv.innerHTML = "<p>No results found</p>";
+      } else {
+        results.forEach(result => {
+          const resultItem = document.createElement("p");
+          resultItem.textContent = result;
+          resultsDiv.appendChild(resultItem);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

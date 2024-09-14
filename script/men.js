@@ -24,7 +24,7 @@
  
  function displayItemsOnMenPage () {
 
-     let mensItemContainerElement = document.    querySelector('.mens-items-container');
+     let mensItemContainerElement = document.querySelector('.mens-items-container');
 
      //variable
  
