@@ -50,7 +50,7 @@ function displayBagSummary()
       </div>
     </div>
     <button class="btn-place-order">
-      <div class="order">PLACE ORDER</div>
+      <div class="order" onClick="placeOrder ()">PLACE ORDER</div>
     </button>`;
 }
 
@@ -95,6 +95,14 @@ function removeFromBag (itemId)
   displayBagIcon();
   displayBagItems();
   displayBagSummary();
+}
+
+function placeOrder () {
+  if(displayBagSummary)
+  {
+    alert('Order Successfully...');
+    window.location.href="../index.html";
+  }
 }
 
 function generateItemHTML (item)

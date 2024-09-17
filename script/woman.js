@@ -14,6 +14,10 @@
  function addToCollection(womenItemId){
   womenCollection.push(womenItemId);
   displayWomenBagIcon()
+  if(addToCollection)
+  {
+    alert("product is add to bag")
+  }
  }
 
  function displayWomenBagIcon()

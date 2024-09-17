@@ -15,11 +15,17 @@ function onLoad()
 
 
 
+
 function addToBag (itemId)
 {
  bagItems.push(itemId);
  localStorage.setItem('bagItems', JSON.stringify(bagItems));
   displayBagIcon();
+
+  if (addToBag)
+  {
+    alert('product is add to bag')
+  }
 }
 
 function displayBagIcon()
@@ -36,6 +42,19 @@ function displayBagIcon()
    }
 }
 
+function searchProducts(){
+
+  const input = document.getElementById("searchInput").ariaValueMax.toLowerCase();
+
+  const filteredProducts = items.filter(item => 
+    item.company.toLowerCase().includes(input) ||
+    item.item_name.toLowerCase().includes(input)||
+    item.original_price.toLowerCase().includes(input)
+  );
+   displayItemsOnHomePage(filteredProducts);
+}
+
+
 function displayItemsOnHomePage ()
 {
   let itemsContainerElement = document.getElementById('items-container');
@@ -45,6 +64,7 @@ function displayItemsOnHomePage ()
   {
     return;
   };
+
 
 
 
