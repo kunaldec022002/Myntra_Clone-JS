@@ -42,17 +42,6 @@ function displayBagIcon()
    }
 }
 
-function searchProducts(){
-
-  const input = document.getElementById("searchInput").ariaValueMax.toLowerCase();
-
-  const filteredProducts = items.filter(item => 
-    item.company.toLowerCase().includes(input) ||
-    item.item_name.toLowerCase().includes(input)||
-    item.original_price.toLowerCase().includes(input)
-  );
-   displayItemsOnHomePage(filteredProducts);
-}
 
 
 function displayItemsOnHomePage ()
