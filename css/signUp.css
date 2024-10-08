@@ -8,6 +8,12 @@ body {
             margin: 0;
         }
 
+        .main-signup-container
+        {
+            display: flex;
+            
+        }
+
         .signup-container {
             background-color: #fff;
             padding: 20px;
