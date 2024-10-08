@@ -1,5 +1,6 @@
-//Array
 
+
+//Array
 let bagItems;
 
 onLoad();
@@ -90,5 +91,6 @@ function displayItemsOnHomePage ()
   
   itemsContainerElement.innerHTML = innerHtml ;
 }
+
 
 
